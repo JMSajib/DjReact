@@ -16,6 +16,9 @@ handleSubmit(event) {
     fetch(REQ_URL, {
       method: 'POST',
       body: data,
+    })
+    .then(response => {
+      alert(response.statusText);
     });
   }
 
