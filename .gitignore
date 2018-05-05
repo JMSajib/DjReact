@@ -10,5 +10,6 @@ node_modules/
 bower_components/
 logs
 static_cdn/static_root
+webpack-stats.json
 .vscode
 yarn.lock

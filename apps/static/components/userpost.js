@@ -20,20 +20,24 @@ handleSubmit(event) {
     .then(response => {
       alert(response.statusText);
     });
+    event.target.reset();
   }
 
   render() {
     return (
       <div class="container">
-      <form onSubmit={this.handleSubmit}>
-        <label htmlFor="name">Enter Name</label>
-        <input id="name" name="name" type="text" />
-
-        <label htmlFor="varsity">Enter your Varsity</label>
-        <input id="varsity" name="varsity" type="text" />
-
-        <button>Send data</button>
-      </form>
+       <h2>Create Post</h2><hr/>
+        <form onSubmit={this.handleSubmit}>
+          <div class="form-group">
+            <label htmlFor="name">Enter Name</label>
+            <input id="name" class="form-control" name="name" type="text" />
+          </div>
+          <div class="form-group">
+            <label htmlFor="varsity">Enter your Varsity</label>
+            <input id="varsity" class="form-control" name="varsity" type="text" />
+          </div>
+          <button type="submit" class="btn btn-primary">Send Data</button>
+        </form>
       </div>
     );
   }

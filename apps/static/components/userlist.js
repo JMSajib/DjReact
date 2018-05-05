@@ -16,7 +16,7 @@ componentDidMount(){
     })
     .then(response => response.json())
     .then(data =>{
-        console.log(data)
+        // console.log(data)
         this.setState({
             bookList:data
         })
